@@ -1,6 +1,5 @@
 package question1;
 
-import java.util.ListIterator;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -27,13 +26,16 @@ public class PrintReverse {
     }
 
     public void printDentence(Stack<String> theStack) {
-        ListIterator<String> list = theStack.listIterator(theStack.size());
-
+      
         System.out.println("Reverse Sentence :");
-
-        while (list.hasPrevious()){
-            String words = list.previous();
-            System.out.println(words);
+        
+        int len = theStack.size();
+        
+        while(!(len == 0)) {
+        	System.out.println(theStack.peek());
+        	theStack.pop();
+        	len -= 1;
         }
+        
     }
 }
