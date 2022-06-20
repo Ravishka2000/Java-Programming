@@ -32,8 +32,7 @@ public class PrintReverse {
         int len = theStack.size();
         
         while(!(len == 0)) {
-        	System.out.println(theStack.peek());
-        	theStack.pop();
+        	System.out.println(theStack.pop());
         	len -= 1;
         }
         
